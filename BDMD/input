@@ -1,0 +1,16 @@
+int eventspercycle = 50;              // # events per sphere per cycle
+int N = 2000;                          // number of spheres
+double initialpf = 0.01;              // initial packing fraction
+double maxpf = 0.58;                  // max packing fraction
+double temp = 1.0;                    // initial temp., use 0 for zero velocities
+double growthrate = 0.001;            // growth rate
+double maxpressure = 50000000;       // max pressure 
+double maxcollisionrate = 50000000;  // max collision rate 
+double bidispersityratio = 0.0;       // ratio of sphere radii
+double bidispersityfraction = 1.0;    // fraction of larger spheres
+double massratio = 1.;               // ratio of sphere masses
+int hardwallBC = 0;                   // 0 for periodic, 1 for hard wall BC
+int polydisperse = 1;
+char* readfile = new                  // can read in configuration of spheres; if new, creates new
+char* writefile = write.dat           // contains final configuration of spheres
+char* datafile = stats.dat            // contains output statistics 
